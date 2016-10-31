@@ -13,7 +13,7 @@ public class ex03 {
 		String n = scn.next();
 		fun1(n);}
 	public static void fun1(String n){
-		for(int i = 0;i<n.length();i++){
+		for(int i =0;i<n.length();i++){
 			System.out.print(n.charAt(i)+" ");
 		}
 		

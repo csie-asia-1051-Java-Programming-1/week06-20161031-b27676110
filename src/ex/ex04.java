@@ -4,11 +4,21 @@
  * Date: 2016/10/31
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.Scanner;
 public class ex04 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		String n = scn.next();
+		fun(n);}
+	public static void fun(String n){
+		for(int i = 1;i<n.length();i++){
+			int c = n.charAt(i);
+			int d = c-'A'-24;
+			System.out.println((double)Math.pow(d,2)+" ");
+			
+		}
 
 	}
 
