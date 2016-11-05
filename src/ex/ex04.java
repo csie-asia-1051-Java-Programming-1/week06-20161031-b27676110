@@ -10,13 +10,20 @@ public class ex04 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner scn = new Scanner(System.in);
-		String n = scn.next();
-		fun(n);}
-	public static void fun(String n){
-		for(int i = 1;i<n.length();i++){
-			int c = n.charAt(i);
-			int d = c-'A'-24;
-			System.out.println((double)Math.pow(d,2)+" ");
+		System.out.println("請輸入幾個數");
+		int n = scn.nextInt();
+		int data[] = new int [n];
+		for(int i =0;i<n;i++){
+			data[i]=scn.nextInt();
+		}
+		square(data, n);
+	}
+	public static void square(int data[] ,int n){
+        for(int i =0;i<n;i++){
+        	data[i]=data[i]*data[i];
+        }
+        for(int i =0;i<n;i++){
+        	System.out.print(data[i]+" ");
 			
 		}
 
